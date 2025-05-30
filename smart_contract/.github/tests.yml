@@ -1,0 +1,34 @@
+name: Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: aiken-lang/setup-aiken@v1.0.2
+        with:
+          version: v1.1.10
+
+      - run: aiken fmt --check
+      - run: aiken check
+      # - run: aiken build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: aiken-lang/setup-aiken@v1.0.2
+        with:
+          version: v1.1.2
+
+      - run: aiken fmt --check
+      - run: aiken check -D
+      - run: aiken build

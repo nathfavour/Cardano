@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,  
+    "skipLibCheck": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true, 
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*", "lucid/src/**/*"],
+  "exclude": ["node_modules"]
+}

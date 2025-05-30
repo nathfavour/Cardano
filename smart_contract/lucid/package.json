@@ -1,0 +1,20 @@
+{
+  "name": "lucid",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/loan.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start": "node dist/loan.js",
+    "dev": "ts-node src/loan.ts"
+  },
+  "dependencies": {
+    "@lucid-evolution/lucid": "0.4.27",
+    "@lucid-evolution/utils": "0.1.65"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
